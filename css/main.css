@@ -96,8 +96,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+header {
+    background: #1c93a7;
+}
 
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 90%;
+}
 
+img {
+    max-height: 150px;
+}
 
 
 
