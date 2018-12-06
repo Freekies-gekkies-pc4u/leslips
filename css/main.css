@@ -96,7 +96,120 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-header {
+
+   /* -------------------- nav -------------------- */
+   nav{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background: #2d2d2d;
+    overflow:hidden;
+    height:63px;
+  }
+.fa-bars {
+    display: none;
+    padding: 14px 8px 14px 16px;
+    color: white;
+}
+.fa-bars:hover {
+    border-radius: 5px;
+    cursor: pointer;
+    color:#9f9f9f;
+}
+@keyframes menuBtnRotation {
+    form {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(180deg);
+    }
+}
+.navbar-nav {
+    margin-left: 8px;
+    display: flex;
+}
+nav a{
+    font-weight: bold;
+    display:block;
+    color: #fff;
+    text-align:center;
+    padding:14px 16px;
+    text-decoration:none;
+    font-size:17px;
+}
+  
+  
+nav a:hover{
+    border-radius: 5px;
+    background-color:#ddd;
+    color:#000;
+}
+  
+.side-nav{
+    height:100%;
+    width:0;
+    position:fixed;
+    z-index:1;
+    top:0;
+    left:0;
+    background-color:#2d2d2d;
+    opacity:0.9;
+    overflow-x:hidden;
+    padding-top:60px;
+    transition:0.5s;
+}
+  
+.side-nav a{
+    font-weight: bold;
+    padding:10px 10px 10px 30px;
+    text-decoration:none;
+    font-size:22px;
+    color:#ccc;
+    display:block;
+    transition:0.3s;
+}
+  
+.side-nav a:hover{
+    color:#fff;
+    border-left: 3px solid white;
+}
+  
+.side-nav .btn-close{
+    position:absolute;
+    top:20px;
+    right:22px;
+    color: white;
+    margin-left:50px;
+}
+.side-nav .btn-close:hover{
+    cursor: pointer;
+    animation: btnRotation 0.5s;
+}
+@keyframes btnRotation {
+    form {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(180deg);
+    }
+}
+  
+#main{
+    transition:margin-left 0.5s;
+    padding:20px;
+    overflow:hidden;
+    width:100%;
+}
+
+@media only screen and (max-width:655px){
+    .navbar-nav{display:none}
+    .fa-bars {display: block;}
+}
+
+
+/* -------------------- header -------------------- */
+
+   header {
     background: #1c93a7;
 }
 
